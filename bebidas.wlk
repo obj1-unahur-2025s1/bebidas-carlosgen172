@@ -1,6 +1,6 @@
 object tito {
   const peso = 70
-  var rendimiento = 100
+  var rendimiento = 1
   method rendimiento() = rendimiento
   method consumir(cantidad , bebida){
     rendimiento = rendimiento * bebida.rendimiento(cantidad)

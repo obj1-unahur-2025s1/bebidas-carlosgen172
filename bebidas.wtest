@@ -4,9 +4,10 @@ test "tito consume un shot de whisky, que son 60 ml y su rendimiento baja a 0.18
     assert.equals(0.18, tito.rendimiento())
 }
 
-test "tito consume un terere, que son 100 ml y su rendimiento sube a 1000" {
+test "tito consume un terere, que son 100 ml y su rendimiento sube a 1000 y su velocidad es de 70" {
     tito.consumir(100, terere)
-    assert.equals(1000, tito.rendimiento())
+    assert.equals(10, tito.rendimiento())
+    assert.equals(70, tito.velocidad())
 }
 
 
