@@ -1,0 +1,16 @@
+import bebidas.*
+test "tito consume un shot de whisky, que son 60 ml y su rendimiento baja a 0.18" {
+    tito.consumir(60, whisky)
+    assert.equals(0.18, tito.rendimiento())
+}
+
+test "tito consume un terere, que son 100 ml y su rendimiento sube a 1000" {
+    tito.consumir(100, terere)
+    assert.equals(1000, tito.rendimiento())
+}
+
+
+test "tito consume cianuro, de cualquier cantidad y su rendimiento baja a 0 porque se muere" {
+    tito.consumir(1, cianuro)
+    assert.equals(0, tito.rendimiento())
+}
